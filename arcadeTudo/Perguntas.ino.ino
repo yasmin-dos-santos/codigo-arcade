@@ -9,8 +9,8 @@ LiquidCrystal_I2C lcd(0x27, 2,1,0,4,5,6,7,3, POSITIVE);
 #define BotC 4
 #define BotD 5
 
-int nQuestao = 10;
-int array[10];
+int nQuestao = 20;
+int array[20];
 int ponto = 0;
   
 void setup(){
@@ -44,8 +44,8 @@ void SelecionaQuestao(int nQuestao){
     case 0:
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Questao 1");
-    if(AnalisaBotao()=='A'){
+      lcd.print("81-14=?  43 73 67 52");
+    if(AnalisaBotao()=='C'){
           lcd.setCursor(0,1);
           lcd.print("Correto!");
         }else{
@@ -56,7 +56,7 @@ void SelecionaQuestao(int nQuestao){
     case 1:
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Questao 2");
+      lcd.print("³√8=?  1,13 2 24 512");
       if(AnalisaBotao()=='B'){
           lcd.setCursor(0,1);
           lcd.print("Correto!");
@@ -68,8 +68,8 @@ void SelecionaQuestao(int nQuestao){
     case 2:
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Questao 3");
-        if(AnalisaBotao()=='C'){
+      lcd.print("Qual o símbolo do hélio?  Hl He Ho H" );
+        if(AnalisaBotao()=='B'){
           lcd.setCursor(0,1);
           lcd.print("Correto!");
         }else{
@@ -80,8 +80,8 @@ void SelecionaQuestao(int nQuestao){
     case 3:
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Questao 4");
-        if(AnalisaBotao()=='D'){
+      lcd.print("Medida da massa molar? g/mol mol/ml mol Kg/mol");
+        if(AnalisaBotao()=='A'){
           lcd.setCursor(0,1);
           lcd.print("Correto!");
         }else{
@@ -92,7 +92,7 @@ void SelecionaQuestao(int nQuestao){
     case 4:
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Questao 5");
+      lcd.print("Massa atômica de O2? (O=16) 32 45 64 26");
         if(AnalisaBotao()=='A'){
           lcd.setCursor(0,1);
           lcd.print("Correto!");
@@ -104,7 +104,7 @@ void SelecionaQuestao(int nQuestao){
     case 5:
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Questao 6");
+      lcd.print("Medida de pressão cm³ atm K P");
         if(AnalisaBotao()=='B'){
           lcd.setCursor(0,1);
           lcd.print("Correto!");
@@ -116,8 +116,8 @@ void SelecionaQuestao(int nQuestao){
     case 6:
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Questao 7");
-        if(AnalisaBotao()=='C'){
+      lcd.print("N° de pontos em um set de vôlei 15 25 30 20");
+        if(AnalisaBotao()=='B'){
           lcd.setCursor(0,1);
           lcd.print("Correto!");
         }else{
@@ -128,7 +128,7 @@ void SelecionaQuestao(int nQuestao){
     case 7:
       lcd.clear();
       lcd.setCursor(0,0);
-      lcd.print("Questao 8");
+      lcd.print("Primeiro Macintosh 1998 2002 1990 1984");
         if(AnalisaBotao()=='D'){
           lcd.setCursor(0,1);
           lcd.print("Correto!");
