@@ -23,10 +23,6 @@ void setup(){
   lcd.clear();
   lcd.setCursor(0,0);
   
-  lcd.print("Seja Bem Vindo!");
-  Serial.begin(9600);
-  delay(2000);
-  lcd.clear();
   
   geraSequencia();
 }
@@ -37,9 +33,6 @@ ponto = 0;
     SelecionaQuestao(array[i]);
   }
   
-  lcd.clear();
-  lcd.setCursor(0,0);
-  lcd.print("Fim de Jogo!");
   
   delay(2000);
 }
@@ -169,7 +162,115 @@ void SelecionaQuestao(int nQuestao){
         }
     break;
   }
-  
+   case 10:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 11");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }
+         case 11:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 12");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }
+         case 13:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 14");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }
+         case 14:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 15");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }
+         case 15:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 16");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }
+         case 16:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 17");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }
+         case 17:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 18");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }
+         case 18:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 19");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }
+         case 19:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 20 case 9:
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("Questao 10");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }");
+        if(AnalisaBotao()=='B'){
+          lcd.setCursor(0,1);
+          lcd.print("Correto!");
+        }else{
+          lcd.setCursor(0,1);
+          lcd.print("Errado!");
+        }
 }
 
 char AnalisaBotao(){
